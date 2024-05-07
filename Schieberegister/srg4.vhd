@@ -23,7 +23,7 @@ begin
 		if rising_edge(clk) then
 			if rst_b = '1' then
 				case m is
-					when "00" => -- Daten laden
+					when "11" => -- Daten laden
 						q <= d;
 					when "01" => -- Rechts schieben
 						q(3) <= se_right;
